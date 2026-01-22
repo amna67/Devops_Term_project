@@ -1,0 +1,25 @@
+{
+  "name": "devops_term_project",
+  "version": "1.0.0",
+  "description": "This repository contains an **end-to-end DevOps term project** for a static **University Department website**. The main goal of this project is to practically implement core DevOps concepts including **Git Flow**, **Docker containerization**, **Continuous Integration (CI)**, **Continuous Deployment (CD)**, and **multi-environment deployment** using **GitHub Actions** and **Render**.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amna67/Devops_Term_project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amna67/Devops_Term_project/issues"
+  },
+  "homepage": "https://github.com/amna67/Devops_Term_project#readme",
+  "devDependencies": {
+    "htmlhint": "^1.8.0",
+    "parcel": "^2.16.3",
+    "stylelint": "^17.0.0"
+  }
+}
