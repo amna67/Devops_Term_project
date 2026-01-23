@@ -1,12 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>UCP</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="../styles/style.css" rel="stylesheet">
-    </head>
-    <body>
-    
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCP | Contact</title>
+
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="logo">UCP</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="faculty.html">Faculty</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="contact-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1>Contact Us</h1>
+        <p>We’re here to help you. Reach out to us anytime and we’ll respond promptly.</p>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-layout">
+    <div class="contact-wrapper">
+
+        <!-- Left: Contact Form -->
+        <div class="contact-form-section">
+            <h2>Send Us a Message</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Subject" required>
+                <textarea placeholder="Your Message" rows="6" required></textarea>
+                <button type="submit" class="btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <!-- Right: Info Cards -->
+        <div class="contact-info-vertical">
+            <div class="info-card">
+                <img src="https://unpkg.com/simple-icons@v11/icons/googlemaps.svg" alt="Location icon">
+                <div>
+                    <h3>Address</h3>
+                    <p>Johar Town, Lahore, Pakistan</p>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <img src="https://unpkg.com/simple-icons@v11/icons/gmail.svg" alt="Email icon">
+                <div>
+                    <h3>Email</h3>
+                    <p>info@ucp.edu.pk</p>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <img src="https://unpkg.com/simple-icons@v11/icons/whatsapp.svg" alt="Phone icon">
+                <div>
+                    <h3>Phone</h3>
+                    <p>+123 456 7890</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section cta-layout">
+    <div class="cta-wrapper">
+
+        <div class="cta-image">
+            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=80" alt="Support">
+        </div>
+
+        <div class="cta-content">
+            <h2>Still Have Questions?</h2>
+            <p>Contact our admissions office directly or request a call back.</p>
+            <a href="#" class="btn-secondary">Request Call</a>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2026 UCP. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="#"><img src="https://unpkg.com/simple-icons@v11/icons/facebook.svg" alt="Facebook"></a>
+            <a href="#"><img src="https://unpkg.com/simple-icons@v11/icons/twitter.svg" alt="Twitter"></a>
+            <a href="#"><img src="https://unpkg.com/simple-icons@v11/icons/linkedin.svg" alt="LinkedIn"></a>
+        </div>
+    </div>
+</footer>
+
+</body>
 </html>
