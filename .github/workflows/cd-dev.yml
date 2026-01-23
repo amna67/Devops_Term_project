@@ -1,12 +1,12 @@
-name: cd-stage-wf
+name: cd-dev-wf
 on: 
   push:
     branches:
-      - staging
+      - develop
 jobs:
-  deploy-staging-job:
+  deploy-dev-job:
     runs-on: ubuntu-latest
-    environment: staging
+    environment: development
     steps:
-      - name: Deploy Website
-        run: curl -X POST ${{ secrets.STAGING_ENV_HOOK}}
+      - name: deploy website
+        run: curl -X POST ${{ secrets.DEVELOP_ENV_HOOK}}
