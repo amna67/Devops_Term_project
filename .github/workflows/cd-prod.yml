@@ -1,0 +1,12 @@
+name: cd-prod-wf
+on: 
+  push:
+    branches:
+      - main
+jobs:
+  deploy-prod-job:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Deploy Website
+        run: curl -X POST ${{ secrets.PRODUCTION_ENV_HOOK}}
