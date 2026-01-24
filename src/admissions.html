@@ -1,12 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>UCP</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="../styles/style.css" rel="stylesheet">
-    </head>
-    <body>
-    
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCP | Admissions</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/admissions.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="logo">UCP</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="faculty.html">Faculty</a></li>
+            <li><a href="admissions.html" class="active">Admissions</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="admissions-hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1>Join UCP Today</h1>
+        <p>Take the first step towards your academic excellence and successful career path.</p>
+    </div>
+</section>
+
+<!-- Admissions Info Section -->
+<section class="admissions-info">
+    <div class="info-container">
+        <div class="info-card">
+            <h3>Eligibility Criteria</h3>
+            <ul>
+                <li>Completed High School Education (FSc/A-Levels)</li>
+                <li>Minimum 60% aggregate marks required</li>
+                <li>Valid Entry Test Score</li>
+                <li>Meet course-specific requirements</li>
+            </ul>
+        </div>
+
+        <div class="info-card">
+            <h3>Application Process</h3>
+            <ol>
+                <li>Fill the online application form</li>
+                <li>Upload required documents</li>
+                <li>Pay application fee</li>
+                <li>Attend entrance test or interview</li>
+                <li>Receive admission decision</li>
+            </ol>
+        </div>
+
+        <div class="info-card">
+            <h3>Required Documents</h3>
+            <ul>
+                <li>High School Certificate & Transcripts</li>
+                <li>Entry Test Result (if applicable)</li>
+                <li>National ID Card Copy</li>
+                <li>Recent Passport-size Photograph</li>
+                <li>Character Certificate</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Application Form Section -->
+<section class="application-section">
+    <div class="form-wrapper">
+        <h2>Submit Your Application</h2>
+        <form class="admissions-form">
+            <div class="form-row">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+            </div>
+
+            <div class="form-row">
+                <input type="tel" placeholder="Phone Number" required>
+                <input type="text" placeholder="CNIC Number" required>
+            </div>
+
+            <div class="form-row">
+                <select required>
+                    <option value="">Select Your Program</option>
+                    <option value="cs">Computer Science</option>
+                    <option value="ba">Business Administration</option>
+                    <option value="eng">Engineering</option>
+                    <option value="psy">Psychology</option>
+                    <option value="ds">Data Science</option>
+                </select>
+                <input type="number" placeholder="Entry Test Score" required>
+            </div>
+
+            <textarea placeholder="Additional Information (Optional)" rows="4"></textarea>
+            <button type="submit" class="btn-primary">Submit Application</button>
+        </form>
+    </div>
+</section>
+
+<!-- Important Dates Section -->
+<section class="important-dates">
+    <h2>Important Dates</h2>
+    <div class="dates-container">
+        <div class="date-card">
+            <h4>Application Deadline</h4>
+            <p>March 31, 2026</p>
+        </div>
+        <div class="date-card">
+            <h4>Entrance Exam</h4>
+            <p>April 15-20, 2026</p>
+        </div>
+        <div class="date-card">
+            <h4>Results Announcement</h4>
+            <p>May 10, 2026</p>
+        </div>
+        <div class="date-card">
+            <h4>Registration Begins</h4>
+            <p>May 20, 2026</p>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-container">
+        <div class="faq-item">
+            <h4>When does the application period open?</h4>
+            <p>Applications are open from January 15 onwards. Submit your application before the deadline on March 31, 2026.</p>
+        </div>
+        <div class="faq-item">
+            <h4>What is the application fee?</h4>
+            <p>The application fee is PKR 2,000. This fee is non-refundable but covers your entrance exam fee.</p>
+        </div>
+        <div class="faq-item">
+            <h4>Can I apply for multiple programs?</h4>
+            <p>Yes, you can apply for up to 3 programs. You'll need to submit separate applications for each program.</p>
+        </div>
+        <div class="faq-item">
+            <h4>What is the scholarship policy?</h4>
+            <p>UCP offers merit-based and need-based scholarships up to 100% of tuition fees for qualifying students.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact CTA Section -->
+<section class="contact-cta">
+    <h2>Have Questions?</h2>
+    <p>Contact our admissions office for more information about our programs and admission process.</p>
+    <div class="cta-buttons">
+        <a href="contact.html" class="btn-primary">Contact Admissions</a>
+        <a href="courses.html" class="btn-secondary">Explore Courses</a>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2026 UCP - All Rights Reserved</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+</footer>
+
+</body>
 </html>
