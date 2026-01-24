@@ -1,0 +1,12 @@
+name: cd-stage-wf
+on: 
+  push:
+    branches:
+      - staging
+jobs:
+  deploy-staging-job:
+    runs-on: ubuntu-latest
+    environment: staging
+    steps:
+      - name: Deploy Website
+        run: curl -X POST ${{ secrets.STAGING_ENV_HOOK}}
