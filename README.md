@@ -31,26 +31,6 @@ The static website consists of the following pages:
 * **Events Page:** Shows social and educational events happening in university
 
 ---
-
-## 🔀 Git Flow Strategy
-
-The project follows **Git Flow best practices**:
-
-* `feature/*` – Individual feature development (HTML/CSS pages, workflows)
-* `develop` – Integration branch for all team members
-* `staging` – QA and testing environment
-* `main` – Production-ready code
-
----
-
-## 🐳 Dockerization
-
-* The website is containerized using **Docker**
-* A single **Dockerfile** is used for all environments
-* Multi-stage build is used to build the website and serve it using **Nginx**
-
----
-
 ## ⚙️ CI/CD Pipelines
 
 ### Continuous Integration (CI)
@@ -74,44 +54,6 @@ The project follows **Git Flow best practices**:
   * Production
 
 ---
-
-## 🔐 Secrets Management
-
-* **Docker Hub credentials** stored as repository secrets
-* **Render deploy hooks** stored using **GitHub Environments**:
-
-  * `development`
-  * `staging`
-  * `production`
-
----
-
-## 🚀 Deployment Environments
-
-The application is deployed to three separate Render web services:
-
-* **Development Environment**
-* **Staging / QA Environment**
-* **Production Environment**
-
-Each environment has its own URL and deployment pipeline.
-
----
-
-## 🧪 Local Setup & Testing
-
-```bash
-# Build Docker image locally
-docker build -t devops-term-project .
-
-# Run container locally
-docker run -p 8080:80 devops-term-project
-```
-
-Access the website at: `http://localhost:8080`
-
----
-
 ## 📄 License
 
 This project is created for **academic purposes** as part of a DevOps course.

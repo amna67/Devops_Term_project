@@ -1,0 +1,145 @@
+/* Hero Section */
+.faculty-hero {
+    position: relative;
+    background: url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.faculty-hero .hero-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(26,188,156,0.7);
+}
+
+.faculty-hero .hero-content {
+    position: relative;
+    max-width: 700px;
+}
+
+.faculty-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.faculty-hero p {
+    font-size: 1.2rem;
+}
+
+/* Faculty List Section */
+.faculty-list {
+    padding: 60px 50px;
+}
+
+.faculty-list h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #1abc9c;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Faculty Grid */
+.faculty-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.faculty-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faculty-card h3 {
+    color: #1abc9c;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.faculty-card .department {
+    color: #ff6b6b;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.faculty-card p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.faculty-card .office-hours {
+    color: #777;
+    font-style: italic;
+    margin-top: 10px;
+    font-size: 0.95rem;
+}
+
+.faculty-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+/* CTA Section */
+.cta-section {
+    text-align: center;
+    padding: 60px 50px;
+    background-color: #f9f9f9;
+}
+
+.cta-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #1abc9c;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.cta-section .btn-primary {
+    padding: 15px 30px;
+    border-radius: 5px;
+    background-color: #ff6b6b;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.cta-section .btn-primary:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .faculty-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .faculty-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .faculty-list h2,
+    .cta-section h2 {
+        font-size: 2rem;
+    }
+}
